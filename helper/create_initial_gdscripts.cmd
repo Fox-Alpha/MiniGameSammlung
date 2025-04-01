@@ -1,3 +1,7 @@
+@echo off
+chcp 65001
+echo Erstelle leere Basisdateien mit typisierten Variablen für TicTacToeNetwork Godot-Projekt...
+
 :: Leere Basisdateien erstellen mit typisierten Variablen
 echo # Globale Variablen und Funktionen > scripts\globals.gd
 echo extends Node >> scripts\globals.gd
