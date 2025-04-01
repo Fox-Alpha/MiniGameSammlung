@@ -1,0 +1,8 @@
+/addons/ 
+.import/ 
+export_presets.cfg 
+.godot/ 
+*.import 
+*.translation 
+# .gitkeep Dateien beibehalten 
+!.gitkeep 
