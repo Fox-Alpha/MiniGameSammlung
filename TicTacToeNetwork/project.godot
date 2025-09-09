@@ -12,5 +12,5 @@ config_version=5
 
 config/name="TicTacToeNetwork"
 config/tags=PackedStringArray("2d", "develop", "gd_stable", "godot_4.4", "multiplayer", "projekt")
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
