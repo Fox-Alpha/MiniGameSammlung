@@ -17,6 +17,7 @@ Folgende Games habe ich mir auf die Agenda gesetzt:
 |[ ] |[ ] |Asteroids|
 |[ ] |[ ] |Invaders|
 |[ ] |[ ] |Kopfrechnen Trainer|
+|[ ] |[ ] |Minesweeper|
 
 ## Zielsetzung
 Mein Ziel ist es nicht die nächste Generation dieser Spiele mit neuen Features zu erstellen.
