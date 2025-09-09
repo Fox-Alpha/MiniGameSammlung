@@ -1,0 +1,31 @@
+name: Export projects to HTML5 and deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - Godot-42-Stable
+
+env:
+  GODOT_VERSION: 4.2.1
+
+jobs:
+  export-html5:
+    name: Export projects to HTML5 and deploy to GitHub Pages
+    runs-on: ubuntu-20.04
+    container:
+      image: barichello/godot-ci:4.2.2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup
+        run: |
+          mkdir -p ~/.local/share/godot/templates/
+          mv /root/.local/share/godot/export_templates/$GODOT_VERSION.stable ~/.local/share/godot/templates/$GODOT_VERSION.stable
+      - name: Export projects to HTML5
+        run: |
+          BASEDIR="$PWD"
+          # Use absolute paths so that we can `cd` without having to go back to the parent directory manually.
+          echo $BASEDIR
+          # ls -l
+          cp "$BASEDIR/.github/dist/export_presets.cfg" .
+          godot --export "HTML5" "$BASEDIR/.github/dist/index.html"
